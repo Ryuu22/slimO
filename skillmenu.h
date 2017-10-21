@@ -155,5 +155,6 @@ DisplayMenu(int screenHeight, int screenWidth, Texture2D trailIcon,bool unLockTr
                             DrawRectangle(screenWidth/2 + 200,300,200,50,WHITE);
                             DrawRectangle(screenWidth/2 + 200,400,200,50,WHITE);
                             DrawRectangle(screenWidth/2 + 200,500,200,50,WHITE);
-                            return 0;
+                            
+    return 0;
 }

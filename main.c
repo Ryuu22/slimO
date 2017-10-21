@@ -635,24 +635,7 @@ int main()
                         slimeForce = 5.0f;
                     }     
                     
-                    /*BOSS
-                    if(IsKeyPressed(KEY_B) && bossFight == 0)
-                    {
-                        bossFight = 1;
-                        boss.x = screenWidth/2;
-                        boss.y = screenHeight/2;
-                        
-                    }
-                    if(bossFight == 1)
-                    {
-                        if(boss.x + boss.width > screenWidth)bossSpeed.x *= -1;
-                        if(boss.x < 0)bossSpeed.x *= -1;
-                        if(boss.y + boss.height > screenHeight)bossSpeed.y *= -1;
-                        if(boss.x < 0)bossSpeed.y *= -1;
-                        boss.x += bossSpeed.x;
-                        boss.y += bossSpeed.y;
-                    }
-                    */
+                    
                     if(IsMouseButtonPressed(MOUSE_MIDDLE_BUTTON))
                     {
                         buildingON = !buildingON;
@@ -698,7 +681,7 @@ int main()
                     if(pause == 1 || playerLife <= 0)
                     {
                         //RESET GAME        
-                        if(IsKeyPressed(KEY_R))ResetGame(screenWidth, screenHeight, playerSpeed,playerLife,playerGold,enemy[MAX_ENEMIES],enemySpeed[MAX_ENEMIES], enemyLoot[MAX_ENEMIES],enemyLife[MAX_ENEMIES],enemyAlive[MAX_ENEMIES],deadSlimesCounter, enemyDamage, range, pause, slimeTrail[10], trailCounter, trailCounter, trailcoolUp, trailcoolDown, trailRadius, framesCounter,towerCD, buildingTower[5],towerLife[5],towerAlive[5], buildingTCounter, buildingON, buildingKind 1, unLockSaw, sawUpgrade, sawUpgrade2, sawUpgrade3, unLockTrail, trailUpgrade, trailUpgrade2, trailUpgrade3, unLockBuilding, buildingUpgrade, buildingUpgrade2, buildingUpgrade3)
+                        if(IsKeyPressed(KEY_R))ResetGame(screenWidth, screenHeight, playerSpeed, playerLife, playerGold, enemy[MAX_ENEMIES],enemyFramePosition[MAX_ENEMIES], enemyFrame[MAX_ENEMIES], enemyDeathCounter[MAX_ENEMIES], enemySpeed[MAX_ENEMIES], enemyLoot[MAX_ENEMIES],enemyLife[MAX_ENEMIES],enemyAlive[MAX_ENEMIES],deadSlimesCounter, enemyDamage, range, pause, slimeTrail[10], trailCounter, trailCounter, trailcoolUp, trailcoolDown, trailRadius, framesCounter,towerCD, buildingTower[5],towerLife[5],towerAlive[5], buildingTCounter, buildingON, buildingKind , unLockSaw, sawUpgrade, sawUpgrade2, sawUpgrade3, unLockTrail, trailUpgrade, trailUpgrade2, trailUpgrade3, unLockBuilding, buildingUpgrade, buildingUpgrade2, buildingUpgrade3);
                     }                 
                 } break;
                 case ENDING: 
